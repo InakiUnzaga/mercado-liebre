@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+p {
+  font-size: 12px;
+}
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+/* HEADER */
+header {
+  background-color: #eac926;
+}
+.primera-parte {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+header div div.logo {
+  width: 50%;
+  padding: 15px 0px 0px 12px;
+}
+
+header div div.barra-de-busqueda {
+  background-color: #fff;
+  font-size: 14px;
+  border: solid 1px #000;
+  outline: none;
+  padding: 2px;
+  color: #666;
+}
+.top-header {
+  width: 50%;
+  height: 70px;
+  position: relative;
+  padding-right: 3px;
+  padding-top: 27px;
+}
+header div div.lupita {
+  padding: 2px;
+  background-color: #fff;
+  width: 8px;
+  height: 18px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  position: absolute;
+  right: 7px;
+  top: 27px;
+}
+
+header div p.titulo-cuotas-tarjeta {
+  text-align: center;
+  font-weight: bold;
+}
+
+.botones {
+  font-weight: bold;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+/* entre el header y main */
+.banner {
+  width: 100%;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* main */
+
+.titulares {
+  font-size: 24px;
+  text-align: left;
+  padding: 14px;
+}
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+.descuento {
+  font-size: 16px;
+  width: 70%;
+}
+.descripcion {
+  font-size: 16px;
+}
+
+main {
+  text-align: center;
+  width: 100%;
+}
+
+main section div article {
+  margin: 15px;
+  background-color: #fff;
+  width: 350px;
+}
+
+.img-art {
+  width: 100%;
+}
+
+main section div article div {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+}
+
+main section div article div i {
+  color: green;
+  padding-bottom: 15px;
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.descuento {
+  color: rgb(0, 109, 0);
+}
+
+.descripcion {
+  padding-top: 15px;
+}
+
+/* empieza el footer */
+footer {
+  text-align: center;
+}
+
+.imagen-footer {
+  margin: 10px;
+  color: #0044aa;
+  font-size: 2em;
+}
+
+.copyright {
+  font-size: 9px;
+  text-align: left;
+  margin: 30px 10px 10px 10px;
+}
+
+/* mobile*/
+@media (min-width: 361px) {
+  .descripcion {
+    display: none ;
+  }
+  .menu-botones1,
+  .menu-botones2 {
+    display: none;
+  }
+}
+/* desktop*/
+@media (min-width: 769px) {
+ 
+  main section div article {
+    width: 226px;
+  }
+  .menu-botones1,
+  .menu-botones2 {
+    display: inline;
+  }
+  div.burger-menu i {
+    display: none;
+  }
+  header div p.titulo-cuotas-tarjeta {
+    text-align: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 33.33%;
+  }
+  .nav-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-botones1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 42%;
+  }
+  .menu-botones2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 58%;
+    padding-left: 174px;
+  }
+  header div div.logo {
+    width: 38.33%;
+  }
+  .top-header {
+    width: 23.33%;
+    padding-left: 25px;
+    padding-bottom: 58px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header div div.barra-de-busqueda {
+    margin-left: 14px;
+  }
+  header div div.lupita {
+    border: 1px solid black;
+    margin-left: 9px;
+  }
+  article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  article div:hover  h4 {
+    display: block !important;
+    
+  }
+
+  article:hover i {
+    transform: rotateZ(-90deg);
+    transition: all 1000ms ease;
+  }
+  footer nav > div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  .imagen-footer:hover {
+    color: aqua;
+  }
+}
